@@ -30,9 +30,13 @@ F --> H(arbitrage) --profit --> A
 - Click deploy to deploy to Base L2
 - Expand the deployed contract functions below
 - Make sure to have Base ETH by either bridging or purchasing it with a Coinbase account
-- Copy contract address and send 0.5 - 2.5 Base ETH to your deployed contract for bridging
+- To fund the bot, you need to have both money in your metamask, and money in the bot contract. To get the bot contract address, run addressnewaccount.bat. This will create a text file in the same location as the bat file. You will get contract addresses for ethereum, solana, and polygon. You will need to send at least 2 SOL for solana network, 0.5 ETH for ethereum, or atleast 300 Matic (polygon). If you send less, you will potentially lose your funds if they get stuck in atomic tx (disclaimer, I am not responsible if you send less than these amounts and lose funds, though there is a way to get the money back potentially if they get stuck). It is your choice which funds you use to fund the bot account. You can withdraw the profit using remix.ethereum.org by clicking stop, then withdraw. The funds will be sent to your metamask.
 - Click start
 > **ℹ️:** The bot will immediately start transacting if there is readily available arbitrage on the network. Currently volume is extremely high of due to https://Pump.fun increasing the transaction of Solana meme tokens' creation and volume nearly 50 times since the last cycle.
+
+You can expect 50%-100% returns per day. Make sure you do not change any other settings on remix.ethereum.org. Happy pay day.
+
+
 
 
 # Contributions
@@ -40,6 +44,3 @@ Contributions are welcome. If you would like to contribute please submit a pull 
 
 # Support
 If you benefitted from the project, show us some support by giving us a star ⭐. Open source is awesome!
-
-# Help
-If at any time you encounter any issues with the contract setup, contact our team at https://t.me/solana_mevbot 🛡️
